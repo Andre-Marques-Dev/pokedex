@@ -1,0 +1,72 @@
+@use './_variables.sass' as v
+@use './_mixin.sass' as m
+
+nav 
+    display: flex
+    justify-content: space-between
+    padding: 1rem
+    width: 100%
+    border-bottom: solid 1px #eee
+
+    .title
+        @include m.flex-center
+        gap: .5rem
+
+        img
+            width: 1.5rem
+            height: 1.5rem
+
+        h1
+            color: v.$red
+ 
+    .options
+        list-style: none
+        @include m.flex-center
+        gap: 1rem
+        display: flex
+        right: 0
+        top: 0
+        background-color: #fff
+        overflow: hidden
+        border-radius: .5rem
+
+        li
+            transition: 200ms
+            color: v.$blue
+            padding: .5rem 1rem
+            border: solid 1px #ddd
+            border-radius: .5rem
+
+            &:hover
+                cursor: pointer
+                background: v.$blue
+                color: #fff
+        
+        a
+            color: inherit
+            text-decoration: none
+
+
+        // @media screen and (min-width: 470px)
+        //     z-index: 0
+        //     position: relative
+        //     display: flex
+        //     gap: .5rem
+
+        //     li
+        //         padding: .5rem 1rem
+        //         border: solid 1px #ddd
+        //         border-radius: .5rem
+        
+
+    // button 
+    //     @include m.flex-center
+    //     border-radius: 0.3rem
+    //     background-color: transparent
+    //     border: none
+    //     padding: 0.5rem
+    //     color: #777
+    //     cursor: pointer
+
+    //     @media screen and (min-width: 470px)
+    //         display: none

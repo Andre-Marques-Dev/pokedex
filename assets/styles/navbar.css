@@ -1,0 +1,49 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+  border-bottom: solid 1px #eee;
+}
+nav .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+nav .title img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+nav .title h1 {
+  color: #EC5454;
+}
+nav .options {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  display: flex;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+nav .options li {
+  transition: 200ms;
+  color: #3B4CCA;
+  padding: 0.5rem 1rem;
+  border: solid 1px #ddd;
+  border-radius: 0.5rem;
+}
+nav .options li:hover {
+  cursor: pointer;
+  background: #3B4CCA;
+  color: #fff;
+}
+nav .options a {
+  color: inherit;
+  text-decoration: none;
+}/*# sourceMappingURL=navbar.css.map */

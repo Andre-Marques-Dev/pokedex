@@ -1,0 +1,46 @@
+@use './_variables' as v
+
+body
+    position: relative
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: "Poppins", sans-serif
+
+img 
+    object-fit: cover
+    width: 100%
+
+.flex
+    display: flex
+
+.mute
+    color: #999
+    font-style: italic
+    font-size: .8rem
+
+.capitalize
+    text-transform: capitalize
+    
+// pagination contanier
+.pagination 
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 1rem 0
+
+    button 
+        cursor: pointer
+        border-radius: 0.3rem
+        background-color: transparent
+        border: none
+        padding: 0.5rem 1rem
+        outline: 1px solid rgb(102, 143, 240)
+        color: rgb(102, 143, 240)
+
+        &:hover
+            background-color: rgb(102, 143, 240)
+            color: rgb(230, 230, 230)
